@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="true">
+
+    <servlet>
+        <servlet-name>CookiewDemo01</servlet-name>
+        <servlet-class>com.lee.servlet.CookieDemo01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookiewDemo01</servlet-name>
+        <url-pattern>/c1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookiewDemo02</servlet-name>
+        <servlet-class>com.lee.servlet.CookieDemo02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookiewDemo02</servlet-name>
+        <url-pattern>/c2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookiewDemo03</servlet-name>
+        <servlet-class>com.lee.servlet.CookieDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookiewDemo03</servlet-name>
+        <url-pattern>/c3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Session01</servlet-name>
+        <servlet-class>com.lee.servlet.SessionDemo01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Session01</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Session02</servlet-name>
+        <servlet-class>com.lee.servlet.SessionDemo02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Session02</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Session03</servlet-name>
+        <servlet-class>com.lee.servlet.SessionDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Session03</servlet-name>
+        <url-pattern>/s3</url-pattern>
+    </servlet-mapping>
+
+<!--    设置session失效时间-->
+    <session-config>
+<!--        1分钟后session失效-->
+        <session-timeout>1</session-timeout>
+    </session-config>
+</web-app>
